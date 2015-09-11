@@ -5,7 +5,7 @@ var app = express();
 var path = require('path');
 var bodyParser = require('body-parser');
 var port = process.env.PORT || '3000';
-var route = require('./server/router.js')(app);
+// var route = require('./server/router.js')(app);
 var db = require('./server/db.js')(app);
 
 //========================================================//

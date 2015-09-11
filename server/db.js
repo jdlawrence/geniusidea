@@ -16,8 +16,8 @@ module.exports = function(app){
   //   Database Queries                                     //
   //========================================================//
   // ALLOWS USER TO SIGNUP
-  var newUser = function(req, res) {
-  // app.post('/api/signup', function(req, res){  
+  // var newUser = function(req, res) {
+  app.post('/api/signup', function(req, res){  
     console.log('inside signup'); 
     var user = req.body.username;
     var password = req.body.password;
@@ -39,7 +39,7 @@ module.exports = function(app){
       });
 
     });
-  }; 
+  });
 
 
   // SHOWS USER PROFILE
